@@ -1,0 +1,36 @@
+.breadcrumb {
+  padding: 12px 20px;
+  display: flex;
+  background: $base-light;
+
+  @media only screen and (min-width: 765px) {
+    width: 100%;
+    margin: 0 auto;
+    padding: 25px 0 0;
+    background: none;
+  }
+
+  @media only screen and (min-width: 1173px) {
+    padding: 25px 0 0;
+    max-width: 1170px;
+  }
+}
+
+.breadcrumb__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 7px;
+}
+
+.breadcrumb__item {
+  list-style: none;
+
+  a {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 100%;
+    text-decoration: none;
+    color: $base-alt;
+  }
+}
